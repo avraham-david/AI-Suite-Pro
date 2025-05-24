@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "AI Suite Pro",
+  "version": "1.0.0",
+  "description": "AI Suite Pro",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "clipboardWrite"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_title": "Open AI Chat"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
