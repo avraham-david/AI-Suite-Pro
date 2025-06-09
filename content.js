@@ -9,7 +9,7 @@ const AVAILABLE_GEMINI_MODELS = [
     { id: 'gemini-2.5-pro-preview-05-06', name: 'gemini-2.5-pro', endpoint: 'gemini-2.5-pro-preview-05-06generateContent' },
     { id: 'gemini-2.0-flash', name: 'gemini-2.0-flash', endpoint: 'gemini-2.0-flash:generateContent' },
 ];
-const DEFAULT_MODEL_ID = 'gemini-1.0-pro'; // ברירת מחדל
+const DEFAULT_MODEL_ID = 'gemini-2.5-flash-preview-05-20'; // ברירת מחדל
 
 // === API Key & Model Management ===
 async function getUserApiKey() {
